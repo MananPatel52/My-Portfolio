@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+        <div class="hero-header">
+            <div class="wrapper">
+                <header>
+                    <div class="logo">
+                        <i class="fa-solid fa-a"></i>
+                        <div class="logo-text">Manan Patel </div>
+                    </div>
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="navlinks">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Project</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="hero-pic">
+                        <img src="image/img.jpg" alt="progile pic">
+                    </div>
+                    <div class="hero-text">
+                        <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                        <h1>Manan Patel</h1>
+                        <p>Welcome to my digital space! I'm Manan Patel, a dedicated student at VIT Bhopal. Passionate about exploring new ideas and opportunities, I thrive on the dynamic intersection of technology and creativity. </p>
+                        <div class="btn-group">
+                            <a href="https://drive.google.com/file/d/1fWea_BugYpRylBANlq-lVj2kN8qx1Xhw/view?usp=drive_link" class="btn active" target="_blank">Download Resume</a>
+                            <a href="https://www.linkedin.com/in/manan-patel-5332b8244/?lipi=urn%3Ali%3Apage%3Ad_flagship3_resumebuilder%3BKl9kgLYGQ3ObLib42yAslA%3D%3D" class="btn" target="_blank">Contact</a>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/manan-patel-5332b8244/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/MananPatel52" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/manann_5/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        // button click show hide navbar
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector("navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontedn Developer", "UX Designer", "Web Developer"],
+            typedSpeed: 70,
+            backSpeed: 70,
+            loop: true
+        }) 
+    </script>
+</body>
+
+</html>
